@@ -1,0 +1,811 @@
+/* ============================= */
+/* STYLE DASAR */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #fff4e6;
+
+    margin: 0;
+    padding: 0;
+
+    color: #333;
+}
+
+
+/* =========================
+   NAVBAR TENGAH
+========================= */
+
+.navbar {
+    background-color: #fffaf5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    border-bottom: 2px solid #f5b041;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    color: #d35400;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo::before {
+    content: "🍢";
+    font-size: 28px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.menu a {
+    color: #5a3a25;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.menu a:hover {
+    background-color: #e67e22;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* MENU AKTIF */
+.menu a.active {
+    background-color: #d35400;
+    color: white;
+    box-shadow: 0 4px 10px rgba(211, 84, 0, 0.3);
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+
+    background-color: #d35400;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+header h1 {
+
+    margin: 0 0 15px;
+}
+
+
+header p {
+
+    width: 75%;
+
+    margin: auto;
+
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/* VIDEO */
+/* ============================= */
+
+.video-header {
+
+    text-align: center;
+
+    margin: 30px 0 10px;
+}
+
+
+.video-header video {
+
+    width: 70%;
+
+    max-width: 500px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ============================= */
+/* CONTAINER */
+/* ============================= */
+
+.container {
+
+    width: 80%;
+
+    margin: 35px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.page {
+
+    min-height: 400px;
+}
+
+
+h1 {
+
+    color: #d35400;
+}
+
+
+h2 {
+
+    color: #d35400;
+
+    border-bottom:
+        2px solid #f5b041;
+
+    padding-bottom: 8px;
+}
+
+
+h3 {
+
+    color: #e67e22;
+}
+
+h5 {
+     color: #fff1e7;
+
+    border-bottom:
+        2px solid #f5b041;
+
+    padding-bottom: 8px;
+}
+p {
+
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/* MENU DI HOME */
+/* ============================= */
+
+.menu-section {
+
+    width: 80%;
+
+    margin: 40px auto;
+
+    text-align: center;
+}
+
+
+.menu-section h2 {
+
+    display: inline-block;
+}
+
+
+.menu-cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+.menu-card {
+
+    background-color: white;
+
+    width: 28%;
+
+    min-width: 220px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.menu-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+
+.menu-image {
+
+    height: 150px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #fdebd0;
+
+    border-radius: 10px;
+
+    font-size: 70px;
+}
+
+
+.menu-card a {
+
+    display: inline-block;
+
+    background-color: #d35400;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+
+.menu-card a:hover {
+
+    background-color: #e67e22;
+}
+
+
+/* ============================= */
+/* TATA CARA PEMESANAN */
+/* ============================= */
+
+.order-link {
+
+    margin-top: 35px;
+}
+
+
+.order-link a {
+
+    display: inline-block;
+
+    background-color: #d35400;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.order-link a:hover {
+
+    background-color: #e67e22;
+
+    transform: scale(1.03);
+}
+
+
+/* ============================= */
+/* DAFTAR MENU */
+/* ============================= */
+
+ul {
+
+    background-color: #fef5e7;
+
+    padding: 20px 30px;
+
+    border-radius: 8px;
+
+    list-style-position: inside;
+}
+
+
+li {
+
+    padding: 10px;
+
+    border-bottom:
+        1px solid #f5b041;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+li span {
+
+    font-weight: bold;
+
+    color: #d35400;
+}
+
+
+/* ============================= */
+/* INFO BOX */
+/* ============================= */
+
+.info-box {
+
+    background-color: #fef5e7;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+    border-left:
+        5px solid #d35400;
+}
+
+
+/* ============================= */
+/* GALLERY */
+/* ============================= */
+
+.gallery {
+    width: 100%;
+}
+
+
+/* ============================= */
+/* KATEGORI */
+/* ============================= */
+
+.gallery-category {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.gallery-category h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ============================= */
+/* DAFTAR ITEM */
+/* ============================= */
+
+.gallery-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ============================= */
+/* CARD */
+/* ============================= */
+
+.gallery-item {
+    width: 28%;
+    min-width: 220px;
+    background-color: #fef5e7;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* KOTAK GAMBAR */
+/* ============================= */
+
+.gallery-icon {
+    width: 100%;
+    height: 215px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fce9c9;
+}
+
+
+/* ============================= */
+/* GAMBAR */
+/* ============================= */
+
+.gallery-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ============================= */
+/* JUDUL MAKANAN */
+/* ============================= */
+
+.gallery-item h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* ============================= */
+/* PEMESANAN */
+/* ============================= */
+
+.step {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #fef5e7;
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+
+    border-left:
+        5px solid #d35400;
+}
+
+
+.step-number {
+
+    min-width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #d35400;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    border-radius: 50%;
+}
+
+
+.step h3 {
+
+    margin: 0 0 5px;
+}
+
+
+.step p {
+
+    margin: 0;
+}
+
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+.button {
+
+    display: inline-block;
+
+    background-color: #d35400;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 20px;
+
+    border-radius: 6px;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+
+    background-color: #e67e22;
+}
+
+
+/* ============================= */
+/* WELCOME */
+/* ============================= */
+
+.welcome {
+
+    text-align: center;
+
+    margin-top: 100px;
+
+    min-height: 300px;
+}
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+
+    text-align: center;
+
+    background-color: #d35400;
+
+    color: white;
+
+    padding: 15px;
+
+    margin-top: 40px;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+
+        width: 95%;
+
+        flex-direction: column;
+    }
+
+
+    .menu a {
+
+        padding: 10px;
+
+        font-size: 13px;
+    }
+
+
+    .container,
+    .menu-section {
+
+        width: 90%;
+    }
+
+
+    .menu-card,
+    .gallery-item {
+
+        width: 80%;
+    }
+
+
+    header p {
+
+        width: 95%;
+    }
+
+
+    .video-header video {
+
+        width: 95%;
+    }
+
+}
+
+/* =========================
+   PROFIL PELANGGAN
+========================= */
+
+.profile-card {
+    text-align: center;
+    background-color: #fef5e7;
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 5px solid #d35400;
+    margin: 20px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px auto;
+}
+
+.info p {
+  margin: 0;
+  color: #666666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.profile22-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px auto;
+}
+
+.profile-icon{
+    text-align: center;
+    background-color: #fef5e7;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.profileww-icon {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #f5b041;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+
+/* =========================
+   PROFIL PEMILIK
+========================= */
+
+.owner-section {
+    margin-top: 40px;
+}
+
+.owner-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #fef5e7;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border-left: 5px solid #d35400;
+}
+
+.owner-photo {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #f5b041;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   RESPONSIVE PEMILIK
+========================= */
+
+@media (max-width: 768px) {
+
+    .owner-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .owner-photo {
+        width: 180px;
+        height: 220px;
+    }
+
+}
+
+/* ============================= */
+/* GAMBAR RESTORAN - ABOUT */
+/* ============================= */
+
+.about-image {
+    width: 100%;
+    height: 500x;
+    margin: 25px 0 35px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
+    display: block;
+}
